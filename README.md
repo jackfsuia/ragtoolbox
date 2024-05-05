@@ -1,2 +1,2 @@
 # ragtoolbox
-Python tools and operators for RAG with LLMs.
+Grab-and-go RAG tools and operators in python.
