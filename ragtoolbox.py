@@ -7,6 +7,7 @@
 # delete_small_chunks
 # overlap_chunks
 # chunk_to_limited_tokens
+# openai_embedding
 # baichuan_embedding
 # qwen_embedding
 # ernie_embedding
