@@ -124,7 +124,7 @@ def overlap_chunks(chunks:list[str], left_overlap_len=0, right_overlap_len=0):
     first_chunk=chunks[0]
     first_chunk+=chunks[1][0:right_overlap_len]
     res.append(first_chunk)
-    for i in enumerate(1, len(chunks)-1):
+    for i in range(1, len(chunks)-1):
         lstr=chunks[i-1][-left_overlap_len:]
         rstr=chunks[i+1][0:right_overlap_len]
         res.append(lstr+chunks[i]+rstr)
