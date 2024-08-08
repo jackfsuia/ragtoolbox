@@ -97,7 +97,12 @@ def recursive_chunk(text:str, split_symbols:list[str]=[r'\n[0-9][0-9]?\.[0-9][^a
                 chunks=re.split(op, chunk)
                 res_temp+=chunks
             res = res_temp
-
+    res_temp = res
+    # delete all the ''
+    res=[]
+    for c in res_temp:
+        if c:
+            res.append(c)
     return res
 
 
